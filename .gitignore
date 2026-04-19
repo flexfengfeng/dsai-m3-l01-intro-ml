@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+dsai-m3-env/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Conda
+.conda/
+
+# Data — don't accidentally commit large datasets
+*.csv.bak
+data/raw/
+data/processed/
+
+# Model caches
+~/.cache/huggingface/
+.huggingface/
+
+# Env files with secrets
+.env
+.env.local
