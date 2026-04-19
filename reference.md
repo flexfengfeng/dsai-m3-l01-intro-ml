@@ -74,6 +74,12 @@ A recipe for solving a problem. In ML, the algorithm turns training data into a 
 **Classification**
 A supervised learning task where the label is a category (positive/negative, spam/not-spam, cat/dog/bird). See also: regression.
 
+**Confidence Score**
+How sure the model is about a single prediction, usually expressed as a percentage or a number between 0 and 1. A 95% confidence on "POSITIVE" means the model is highly sure; a 55% confidence means it barely picked that label over the other. In practice, teams use confidence to decide which predictions to trust automatically and which to send to a human reviewer.
+
+**Confusion Matrix**
+A small 2×2 table that breaks down a classifier's predictions into four buckets: correct-positive, correct-negative, false-positive, and false-negative. Reveals exactly *where* the model fails — not just overall accuracy. Introduced in Part 3 of this lesson and used throughout the course.
+
 **Deep Learning**
 A sub-field of ML using neural networks with many layers. Covered in L07 onwards. Often used when classical ML plateaus on complex data like images, text, or audio.
 
@@ -107,8 +113,19 @@ The learned mapping from features to predictions. Once trained, you use the mode
 **Overfitting**
 When a model performs well on training data but poorly on new data. The model memorised rather than generalised. Covered in L03.
 
+**Polarity**
+A numeric score between -1 (fully negative) and +1 (fully positive) that a sentiment model outputs to describe how negative or positive a piece of text is. TextBlob returns a polarity score for every sentence. Unlike a bare "positive/negative" label, polarity tells you *how strongly* the model believes it.
+
 **Pre-trained model**
 A model someone else trained on a large dataset, which you can use directly (or fine-tune). Hugely useful — saves time, compute, and data.
+
+**Precision and Recall**
+Two complementary ways to measure a classifier's quality.
+
+- **Precision** = of everything the model labelled positive, what fraction was *actually* positive? (Low precision means lots of false alarms.)
+- **Recall** = of everything that was *actually* positive, what fraction did the model catch? (Low recall means missed real cases.)
+
+The right trade-off depends on the cost of each kind of mistake. Covered in depth in L03.
 
 **Regression**
 A supervised learning task where the label is a number (house price, temperature, sales). See also: classification.
@@ -121,6 +138,9 @@ An ML category where you train on labelled examples. Most business ML is supervi
 
 **Test set**
 A portion of your data held out during training, used only to evaluate the final model. Simulates "performance on unseen data."
+
+**Threshold**
+The cut-off score above which a probabilistic prediction is treated as "positive." Most models default to 0.5, but real businesses rarely do. Sarah lowers her churn-model threshold to 0.3 in Part 3 because missing a real churner costs 40× more than a false alarm. Tuning the threshold is how you translate the business cost of wrongness into model behaviour.
 
 **Training**
 The process of an algorithm learning a model from labelled examples.
@@ -154,4 +174,4 @@ The next natural steps are:
 
 - Take a deeper dive with Andrew Ng's [Machine Learning Specialization on Coursera](https://www.coursera.org/specializations/machine-learning-introduction) (free audit available)
 - Read *Hands-On Machine Learning* (Géron) from end to end
-- Enter a "Getting Started" Kaggle competition to practise the full workflow on a real dataset
+- Sign up for the course-closing **NorthStar 2026 Hackathon capstone** (introduced in L10) to practise the full workflow on a real dataset

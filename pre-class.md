@@ -42,6 +42,8 @@ Do this first, before reading anything below.
 
 Now that you've seen the model work, slow down. Answer these prompts in a notebook, a journal, or just in your head.
 
+> **New to Jupyter?** If you want to type your answer directly inside the notebook (instead of on paper), **double-click** the "*Your answers:*" markdown cell to edit it, type your text, then press **Shift+Enter** to render it back to formatted text. The same shortcut works for every reflection cell in this course.
+
 **Q1 — The magic moment.**
 What happened in the cell where the ML model ran? How long did it take? What would the same task have cost Sarah if she had done it manually?
 
@@ -59,7 +61,7 @@ If you could ask the model one question about *how* it made its decisions, what 
 **Q5 — Priya's doubt.**
 The notebook ends with Priya asking *"Are the positive ones actually positive? How do we know?"* Why is this question more important than it sounds?
 
-> **A possible answer (check after you try):** Without a way to verify, Sarah might confidently report "87% positive" when the real number is 60% — and her manager would make the wrong decision. Trust has to be earned. Lesson 2 is about how.
+> **A possible answer (check after you try):** The notebook showed roughly 60% positive. But Sarah already caught *one* sarcastic review the model got wrong. If the model makes the same mistake on, say, a few hundred of the 10,000 reviews, the real positive rate might be closer to 45%. Priya's retention strategy looks very different at 60% happy customers vs 45%. Without a way to *verify*, Sarah cannot defend the number — she can only report it. Lesson 2 is about how to close that gap.
 
 ---
 

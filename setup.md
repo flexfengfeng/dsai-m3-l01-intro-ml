@@ -53,8 +53,8 @@ You do **not** need to understand these libraries yet. The notebooks will introd
 
 3. Install the libraries:
    ```bash
-   pip install numpy pandas matplotlib seaborn scikit-learn jupyter ipywidgets
-   pip install transformers torch datasets kaggle
+   pip install numpy pandas matplotlib seaborn scikit-learn jupyter ipywidgets textblob
+   pip install transformers torch datasets
    ```
 
 4. Launch Jupyter:

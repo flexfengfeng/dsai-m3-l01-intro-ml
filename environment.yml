@@ -14,7 +14,7 @@ dependencies:
   - notebook
   - ipywidgets
   - pip:
+      - textblob
       - transformers
       - torch
       - datasets
-      - kaggle
