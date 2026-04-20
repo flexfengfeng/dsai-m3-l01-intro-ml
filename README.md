@@ -1,7 +1,7 @@
 # L01 — Introduction to Machine Learning
 
-> *Meet Sarah Chen. It's her first Monday as a Customer Experience Analyst at NorthStar Retail. January 2023.*
-> By the end of this lesson you will have run a machine learning model yourself, know when ML is the right tool, and understand the full workflow from a business problem to a deployed model — seen through Sarah's first week on the job.
+> *Meet Sarah Chen. It's her second week as a Customer Experience Analyst at NorthStar Retail. January 2023.*
+> By the end of this lesson you will have run a machine learning model yourself, know when ML is the right tool, and understand the full workflow from a business problem to a deployed model — seen through Sarah's first real project on the job.
 
 ---
 
@@ -25,7 +25,7 @@
 
 ## Monday morning at NorthStar
 
-You are **Sarah Chen**, newly hired as a Customer Experience Analyst at **NorthStar Retail**, a mid-sized online clothing store. On your first Monday, **Aisha Patel** from Customer Service walks in with a USB drive containing 10,000 customer reviews. Your manager, **Priya Raman**, says:
+You are **Sarah Chen**, newly hired as a Customer Experience Analyst at **NorthStar Retail**, a mid-sized online clothing store. Early in your second week, **Aisha Patel** from Customer Service walks in with a USB drive containing 10,000 customer reviews. Your manager, **Priya Raman**, says:
 
 > *"By Friday, I need to know which of these are positive, which are negative, and whether the negative ones are mostly about sizing, quality, or delivery. Please."*
 
@@ -80,6 +80,24 @@ Sarah goes on secondment to NorthStar's partner **Lakeside Bank**. **Tom Bradley
 
 ---
 
+## Core vs Optional — what this lesson teaches
+
+This is a 3-hour class, so we focus on the 2–3 topics that are most used in real-world ML projects. Other related topics are valuable but live in a separate **self-study notebook**:
+
+**🟢 Core (taught in class):**
+
+- The mental model of supervised / unsupervised / reinforcement learning
+- Regression vs classification and their standard metrics
+- Running a pre-trained ML model end-to-end
+
+**🟡 Optional (self-study, not assessed):**
+
+- Polynomial features, KNN deep-dive, a minimal neural network from scratch, and deeper train/test split theory live in [`notebooks/optional_extensions.ipynb`](./notebooks/optional_extensions.ipynb). These are for curious learners only — skipping them will not affect your understanding of later lessons.
+
+See the [**full course roadmap**](../../M3_Course_Roadmap.md) for the Core / Optional split in every lesson.
+
+---
+
 ## File map
 
 ```
@@ -90,10 +108,11 @@ lesson.md                    ← Concept reference for all key topics
 reference.md                 ← Further reading and glossary
 environment.yml              ← Python environment for all 10 lessons
 notebooks/
-  01_monday_morning.ipynb    ← Sarah's first Monday (~15 min, before class)
+  01_monday_morning.ipynb    ← Sarah's pre-class story (~15 min, before class)
   02_what_is_ml.ipynb        ← What is ML? (in class)
   03_three_categories.ipynb  ← Three categories of ML (in class)
   04_ml_workflow.ipynb       ← The full ML workflow (in class)
   assignment.ipynb           ← Lakeside Bank secondment (after class)
+  optional_extensions.ipynb  ← 🟡 Optional self-study: polynomial features, KNN, mini-NN, train/test theory
 assets/                      ← Images and diagrams
 ```
