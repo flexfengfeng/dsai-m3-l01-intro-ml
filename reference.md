@@ -140,7 +140,7 @@ An ML category where you train on labelled examples. Most business ML is supervi
 A portion of your data held out during training, used only to evaluate the final model. Simulates "performance on unseen data."
 
 **Threshold**
-The cut-off score above which a probabilistic prediction is treated as "positive." Most models default to 0.5, but real businesses rarely do. Sarah lowers her churn-model threshold to 0.3 in Part 3 because missing a real churner costs 40× more than a false alarm. Tuning the threshold is how you translate the business cost of wrongness into model behaviour.
+The cut-off score above which a probabilistic or numeric prediction is treated as belonging to one class. A sentiment model might label everything with a polarity above 0 as "positive," but could just as well use 0.2 to be stricter. Most models default to a neutral mid-point, but real businesses rarely do — tuning the threshold is how you translate the business cost of being wrong in one direction versus the other into model behaviour. Covered in depth in L03.
 
 **Training**
 The process of an algorithm learning a model from labelled examples.
